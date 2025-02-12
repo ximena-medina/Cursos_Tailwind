@@ -11,18 +11,20 @@
 <body>
     <nav></nav>
     <section class="w-full h-screen">
-        <div id="home">
-            <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" name="" id="">
-                    <button class="w-32 rounded-full text-x1 text-primary shadow-sm font-semibold p-3 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">
-                        Explorar
-                    </button>
-                </div>
-                <div class="w-full h-full">
-                    <img src="./img/sanFrancisco.jpg" alt="">
-                </div>
+        <div class="w-full h-3/4 lg:relative" id="home">
+            <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:justify-center lg:h-full lg:pl-16">
+              <input class="text-primary outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:ring-primary focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
+              <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                <p class="text-4xl font-bold">Encuentra más ubicaciones como esta</p>
+              </div>
+              <button class="w-48 rounded-full bg-white text-lg text-primary shadow-sm font-semibold p-4 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
+                Explorar
+              </button>
             </div>
+            <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+              <img class="lg:hidden" src="../public/img/sanFrancisco.jpg" alt="">
+            </div>
+          </div>
         </div>
         <div class="p-6" id="recomendados"> 
             <p class="text-3xl font-semibold text-primary"> Recomendados </p>
